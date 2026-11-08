@@ -281,7 +281,7 @@ for va in train_df['osv'].values:
     try:
         int(va)
         lst.append(np.nan)
-    except:
+    except ValueError:
         sp = ['nan','11.39999961853027','10.30000019073486','unknown','11.30000019073486']
         if va in sp:
             lst.append(np.nan)
